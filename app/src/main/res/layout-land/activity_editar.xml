@@ -68,7 +68,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:hint="@string/edit_nombre"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:singleLine="true"/>
 
 
             <EditText
@@ -79,7 +80,8 @@
                 android:inputType="textPassword"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:layout_weight="0.5"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp"
+                android:singleLine="true"/>
 
             <EditText
                 android:id="@+id/edPassDos"
@@ -90,6 +92,7 @@
                 android:inputType="textPassword"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:layout_marginTop="10dp"
+                android:singleLine="true"
                 />
 
             <RadioGroup

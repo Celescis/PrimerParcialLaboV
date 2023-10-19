@@ -13,21 +13,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_nombre"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
     <EditText
         android:id="@+id/edNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/edit_nombre"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:singleLine="true"/>
 
     <TextView
         android:id="@+id/tvPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_pass"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
     <EditText
         android:id="@+id/edPass"
@@ -35,7 +36,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/edit_pass"
         android:inputType="textPassword"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:singleLine="true"/>
 
     <TextView
         android:id="@+id/tvPassDos"
@@ -50,7 +52,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/edit_passDos"
         android:inputType="textPassword"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:singleLine="true"/>
 
     <LinearLayout
         android:layout_width="match_parent"
