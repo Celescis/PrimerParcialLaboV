@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PP Lab V - Cisternas</string>
+    <string name="hint_nombre">JPerez</string>
+    <string name="hint_tipo">Administrador</string>
+    <string name="text_nombre">Usuario</string>
+    <string name="edit_nombre">Ingrese nombre de usuario</string>
+    <string name="text_pass">Contraseña</string>
+    <string name="edit_pass">Ingrese contraseña</string>
+    <string name="text_passDos">Repita la contraseña</string>
+    <string name="edit_passDos">Vuelva a escribir contraseña</string>
+    <string name="text_tipo">Tipo:</string>
+    <string name="text_tipoAd">Administrador</string>
+    <string name="text_tipoUs">Usuario</string>
+    <string name="text_btn">GUARDAR</string>
+    <string name="titulo">Editar usuario</string>
+</resources>
