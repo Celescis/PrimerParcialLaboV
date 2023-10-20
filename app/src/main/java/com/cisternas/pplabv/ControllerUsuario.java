@@ -6,7 +6,7 @@ import android.widget.Toast;
 
 import java.io.Serializable;
 
-public class ControllerUsuario implements View.OnClickListener{
+public class ControllerUsuario implements View.OnClickListener {
     private ModelUsuario model;
     private ViewUsuario view;
     private Bundle bundle;
@@ -19,17 +19,17 @@ public class ControllerUsuario implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        if(validarDatos())
-        {
+        if (validarDatos()) {
             this.view.llenarModelo();
             MainActivity.objetoEstatico.setNombre(model.getNombre());
             MainActivity.objetoEstatico.setPassword(model.getPassword());
             MainActivity.objetoEstatico.setTipo(model.getTipo());
-            MainActivity.accion=1;
+            MainActivity.accion = 1;
             Toast.makeText(this.view.ac, "Editado con exito!", Toast.LENGTH_SHORT).show();
             view.ac.finish();
         }
     }
+
     private void cargarDatosRecuperados() {
         this.bundle = view.ac.getIntent().getExtras();
         Serializable oSerializado = bundle.getSerializable("objeto");
@@ -42,6 +42,7 @@ public class ControllerUsuario implements View.OnClickListener{
             this.model.setPassword(o.getPassword());
         }
     }
+
     public boolean validarDatos() {
         boolean continuar = true;
 
@@ -55,6 +56,10 @@ public class ControllerUsuario implements View.OnClickListener{
             continuar = false;
         }
 
+        if (this.view.edPass.getText().toString().isEmpty() && this.view.edPassDos.getText().toString().isEmpty()) {
+            Toast.makeText(this.view.ac, "Debe colocar la contraseña", Toast.LENGTH_LONG).show();
+            continuar = false;
+        }
         return continuar;
     }
 }
